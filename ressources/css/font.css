@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Prism";
+    src: url("../font/prism.otf");
+   }
+
+.prism{
+    font-family: "Prism";
+}
+
+@font-face {
+    font-family: "Maccos";
+    src: url("../font/maccos_regular.otf");
+   }
+
+.maccos{
+    font-family: "Maccos";
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/roboto_light.ttf");
+   }
+
+.roboto{
+    font-family: "Roboto";
+}
