@@ -213,3 +213,12 @@ object-fit:cover; /* Do not scale the image */
   .welcome{
     height: 100%;
   }
+
+  .arrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    justify-content: center;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }

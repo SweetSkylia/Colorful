@@ -47,3 +47,21 @@ animation: anim-gradient 15s ease-in-out infinite;
   overflow:auto;
   min-height: 100vh;
  }
+
+
+ .arrow svg{
+    transition: transform 0.5s ease;
+ }
+
+.arrow:hover svg{
+    animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
