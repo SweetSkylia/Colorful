@@ -15,19 +15,6 @@ animation: anim-gradient 15s ease-in-out infinite;
   background-size: 200% 200%;
   overflow:auto;
   min-height: 100vh;
-
-  @keyframes anim-gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-  
-}
  }
 
 
@@ -45,7 +32,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9491E2", en
 animation: anim-gradient 15s ease-in-out infinite;
   background-size: 200% 200%;
   overflow:auto;
-  min-height: 100vh;
+  
  }
 
 
@@ -65,3 +52,16 @@ animation: anim-gradient 15s ease-in-out infinite;
       transform: scale(1.1);
     }
   }
+
+@keyframes anim-gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+  
+}
