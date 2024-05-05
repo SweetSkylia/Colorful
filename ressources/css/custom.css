@@ -254,10 +254,24 @@ object-fit:cover; /* Do not scale the image */
     background-color: white;
     border-radius: 27px;
     padding: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 @media screen and (min-width: 700px) {
     .generation-container{
         width: 70%;
     }
+}
+
+.random-colors-grid{
+    background-color: blue;
+    width: 90%;
+    height: 80%;
+
+}
+
+.random-colors-container{
+    justify-content: center;
+    display: flex;
 }
