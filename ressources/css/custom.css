@@ -262,6 +262,7 @@ object-fit:cover; /* Do not scale the image */
 .generation-text{
     padding-left: 20px;
     margin-bottom: 20px;
+    
 }
 @media screen and (min-width: 700px) {
     .generation-container{
@@ -288,9 +289,25 @@ object-fit:cover; /* Do not scale the image */
     height: 100%;
 }
 
+.colorsbutton{
+    text-decoration: none;
+    border: 2px solid #BBBBBB;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.colorsbutton:hover{
+    background-color: #EEEEEE;
+}
+.colorsbutton:active{
+    background-color: #BBBBBB;
+}
 
+
+.colorcol{
+    background-color: transparent;
+}
 /* A SUPPRIMER */
-
+/* 
 .row > .col:nth-child(1) {
     background-color: pink;
     
@@ -315,4 +332,4 @@ object-fit:cover; /* Do not scale the image */
   .row > .col:nth-child(6) {
     background-color: purple;
   }
-  
+   */
