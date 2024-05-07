@@ -264,7 +264,7 @@ object-fit:cover; /* Do not scale the image */
     margin-bottom: 20px;
     
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width : 700px) {
     .generation-container{
         width: 70%;
     }
