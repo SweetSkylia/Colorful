@@ -13,10 +13,20 @@ onload = (event) => {
 const colorArray = [];
 let columns = document.getElementsByClassName('colorcol');
 let printHex = document.getElementsByClassName('printHex');
-
 function GenerateColors(){
+    const cases = document.querySelectorAll('.random-colors-grid input[type="checkbox"]');
+    const casesVerr = [];
     colorArray.length = 0;
+    cases.forEach((checkbox, index) => { 
+        if (checkbox.checked) {
+            casesVerr.push(index + 1);
+        }
+    });
     for (let i = 0; i < columns.length; i++) {
+        //Si cases verrouillées on change pas
+        if (casesVerr.includes(i+1)) {
+            continue;
+        }
         colorArray[i] = 'RGB(' + randHexVal() + ',' + randHexVal() + ',' + randHexVal() + ')';  
         columns[i].style.backgroundColor = colorArray[i];
         printHex[i].textContent = rgbToHex(colorArray[i]);

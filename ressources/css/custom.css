@@ -314,30 +314,28 @@ object-fit:cover; /* Do not scale the image */
     background-color: transparent;
 }
 
-/* A SUPPRIMER */
-/* 
-.row > .col:nth-child(1) {
-    background-color: pink;
+
+.checkbox-container {
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + label {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.checkbox + label::before {
     
-  }
-  
-  .row > .col:nth-child(2) {
-    background-color: cyan;
-  }
-  
-  .row > .col:nth-child(3) {
-    background-color: green;
-  }
-  
-  .row > .col:nth-child(4) {
-    background-color: yellow;
-  }
-  
-  .row > .col:nth-child(5) {
-    background-color: orange;
-  }
-  
-  .row > .col:nth-child(6) {
-    background-color: purple;
-  }
-   */
+    content: "\1F513"
+    /* content:  url(../media/unlock.svg);  */
+}
+
+.checkbox:checked + label::before {
+    content: "\1F512";
+    /* content: url(../media/lock.svg);  */
+}
