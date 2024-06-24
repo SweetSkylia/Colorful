@@ -294,6 +294,8 @@ object-fit:cover; /* Do not scale the image */
 
 .colors-row{
     height: 100%;
+    text-align: center;
+    
 }
 
 .colorsbutton{
@@ -312,12 +314,18 @@ object-fit:cover; /* Do not scale the image */
 
 .colorcol{
     background-color: transparent;
+    /* display:flex; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 .checkbox-container {
     display: flex;
     gap: 10px;
+
 }
 
 .checkbox {
@@ -327,6 +335,7 @@ object-fit:cover; /* Do not scale the image */
 .checkbox + label {
     font-size: 24px;
     cursor: pointer;
+    
 }
 
 .checkbox + label::before {
